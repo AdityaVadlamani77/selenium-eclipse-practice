@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.2 on win32)" generated="20221229 12:21:35.738" rpa="false" schemaversion="3">
+<suite id="s1" name="Frames1" source="G:\python\robot_framework\test_cases\frames1.robot">
+<test id="s1-t1" name="Frames_Handling" line="8">
+<kw name="Open Browser" library="RPA.Browser.Selenium">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221229 12:21:36.090" level="INFO">Opening browser 'chrome' to base url 'https://www.selenium.dev/selenium/docs/api/java/index.html?overview-summary.html'.</msg>
+<status status="PASS" starttime="20221229 12:21:36.090" endtime="20221229 12:21:38.075"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser.Selenium">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221229 12:21:38.075" endtime="20221229 12:21:38.267"/>
+</kw>
+<kw name="Set Selenium Speed" library="RPA.Browser.Selenium">
+<arg>3seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221229 12:21:38.268" endtime="20221229 12:21:38.269"/>
+</kw>
+<kw name="Frames_test" library="frames_ops">
+<kw name="Select Frame" library="RPA.Browser.Selenium">
+<arg>packageListFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221229 12:21:38.273" level="INFO">Selecting frame 'packageListFrame'.</msg>
+<status status="PASS" starttime="20221229 12:21:38.273" endtime="20221229 12:21:44.379"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>org.openqa.selenium</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221229 12:21:44.379" level="INFO">Clicking link 'org.openqa.selenium'.</msg>
+<status status="PASS" starttime="20221229 12:21:44.379" endtime="20221229 12:21:53.489"/>
+</kw>
+<kw name="Unselect Frame" library="RPA.Browser.Selenium">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221229 12:21:53.490" endtime="20221229 12:21:56.506"/>
+</kw>
+<kw name="Select Frame" library="RPA.Browser.Selenium">
+<arg>packageFrame</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20221229 12:21:56.506" level="INFO">Selecting frame 'packageFrame'.</msg>
+<status status="PASS" starttime="20221229 12:21:56.506" endtime="20221229 12:22:02.547"/>
+</kw>
+<kw name="Click Link" library="RPA.Browser.Selenium">
+<arg>WebDriver</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221229 12:22:02.547" level="INFO">Clicking link 'WebDriver'.</msg>
+<status status="PASS" starttime="20221229 12:22:02.547" endtime="20221229 12:22:11.639"/>
+</kw>
+<kw name="Unselect Frame" library="RPA.Browser.Selenium">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20221229 12:22:11.639" endtime="20221229 12:22:14.658"/>
+</kw>
+<status status="PASS" starttime="20221229 12:21:38.271" endtime="20221229 12:22:14.658"/>
+</kw>
+<status status="PASS" starttime="20221229 12:21:36.089" endtime="20221229 12:22:14.660"/>
+</test>
+<status status="PASS" starttime="20221229 12:21:35.745" endtime="20221229 12:22:14.662"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Frames1">Frames1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

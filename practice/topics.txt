@@ -1,0 +1,67 @@
+topics
+1.python features 
+2.python used for web application ,data sciences,rest api
+3. env set up  for python 
+4. varible 
+5. operators (Arthmatic operators,assigment ,comparision,logical,identy and membership
+6. data types
+	a.number (float,int,complex)
+	b.string (str) 
+	c. tuple  
+	d. list
+	e. dictionary
+	f. set
+mutable data types 
+================
+1.list
+2.set 
+3.dictionary(dict)
+immutable data types
+====================
+1.Number
+2.string 
+3.tuple 	
+
+loops:(
+
+======
+for 
+while 
+nested
+
+statements:
+=========
+break
+pass
+continue
+if 
+elif
+else 
+
+functions(def):
+=========
+key word arrgument
+default arrgument
+
+varible length arrgument:
+	non key word arrgument(*)
+
+	key word arrgument(**)
+
+lambda:
+=====
+filter, map, reduce
+
+list comparision, dictionary comparision
+=========
+zip
+===
+file handling :
+=============
+read 
+write 
+append 
+binary
+
+genrator and iterator
+=====================

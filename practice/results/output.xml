@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.1 (Python 3.10.2 on win32)" generated="20221228 15:05:40.687" rpa="false" schemaversion="3">
+<suite id="s1" name="Python" source="G:\python">
+<suite id="s1-s1" name="Robot Framework" source="G:\python\robot_framework">
+<suite id="s1-s1-s1" name="Code1" source="G:\python\robot_framework\code1.robot">
+<test id="s1-s1-s1-t1" name="Login_Test" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url1}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221228 15:05:40.941" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20221228 15:05:40.940" endtime="20221228 15:05:45.446"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221228 15:05:45.446" endtime="20221228 15:05:45.573"/>
+</kw>
+<kw name="Login_to_OrangeHRM">
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>OrangeHRM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20221228 15:05:45.589" level="INFO">Page title is 'OrangeHRM'.</msg>
+<status status="PASS" starttime="20221228 15:05:45.578" endtime="20221228 15:05:45.590"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 15:05:47.596" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221228 15:05:45.590" endtime="20221228 15:05:47.598"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${username}</var>
+<arg>XPath://*[@name="username"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20221228 15:05:47.598" level="INFO">${username} = XPath://*[@name="username"]</msg>
+<status status="PASS" starttime="20221228 15:05:47.598" endtime="20221228 15:05:47.599"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${password}</var>
+<arg>XPath://*[@name="password"]</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20221228 15:05:47.600" level="INFO">${password} = XPath://*[@name="password"]</msg>
+<status status="PASS" starttime="20221228 15:05:47.599" endtime="20221228 15:05:47.601"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username}</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221228 15:05:47.604" level="INFO">Typing text 'Admin' into text field 'XPath://*[@name="username"]'.</msg>
+<status status="PASS" starttime="20221228 15:05:47.601" endtime="20221228 15:05:47.696"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221228 15:05:47.699" level="INFO">Typing text 'admin123' into text field 'XPath://*[@name="password"]'.</msg>
+<status status="PASS" starttime="20221228 15:05:47.697" endtime="20221228 15:05:47.822"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 15:05:48.336" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20221228 15:05:47.823" endtime="20221228 15:05:48.336"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>XPath://*[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221228 15:05:48.338" level="INFO">Clicking button 'XPath://*[@class="oxd-button oxd-button--medium oxd-button--main orangehrm-login-button"]'.</msg>
+<status status="PASS" starttime="20221228 15:05:48.337" endtime="20221228 15:05:50.100"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 15:05:52.113" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221228 15:05:50.100" endtime="20221228 15:05:52.117"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>XPath://i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221228 15:05:52.129" level="INFO">Clicking element 'XPath://i[@class='oxd-icon bi-caret-down-fill oxd-userdropdown-icon']'.</msg>
+<status status="PASS" starttime="20221228 15:05:52.127" endtime="20221228 15:05:52.304"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>XPath://a[normalize-space()='Logout']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221228 15:05:52.309" level="INFO">Clicking element 'XPath://a[normalize-space()='Logout']'.</msg>
+<status status="PASS" starttime="20221228 15:05:52.305" endtime="20221228 15:05:53.227"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221228 15:05:58.237" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20221228 15:05:53.229" endtime="20221228 15:05:58.238"/>
+</kw>
+<status status="PASS" starttime="20221228 15:05:45.575" endtime="20221228 15:05:58.238"/>
+</kw>
+<status status="PASS" starttime="20221228 15:05:40.939" endtime="20221228 15:05:58.239"/>
+</test>
+<status status="PASS" starttime="20221228 15:05:40.726" endtime="20221228 15:05:58.241"/>
+</suite>
+<status status="PASS" starttime="20221228 15:05:40.720" endtime="20221228 15:05:58.244"/>
+</suite>
+<status status="PASS" starttime="20221228 15:05:40.693" endtime="20221228 15:05:58.246"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Python">Python</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot Framework">Python.Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Code1">Python.Robot Framework.Code1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
