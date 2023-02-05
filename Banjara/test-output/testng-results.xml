@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-01-30T09:19:14 IST" name="Default suite" finished-at="2023-01-30T09:20:23 IST" duration-ms="69605">
+    <groups>
+    </groups>
+    <test started-at="2023-01-30T09:19:14 IST" name="Default test" finished-at="2023-01-30T09:20:23 IST" duration-ms="69605">
+      <class name="banjara.BanjaraTest">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:banjara.BanjaraTest@229f66ed]" started-at="2023-01-30T09:19:13 IST" name="reportSetup" finished-at="2023-01-30T09:19:14 IST" duration-ms="109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportSetup -->
+        <test-method signature="test1()[pri:0, instance:banjara.BanjaraTest@229f66ed]" started-at="2023-01-30T09:19:14 IST" name="test1" finished-at="2023-01-30T09:20:23 IST" duration-ms="69580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="reportTeardown()[pri:0, instance:banjara.BanjaraTest@229f66ed]" started-at="2023-01-30T09:20:23 IST" name="reportTeardown" finished-at="2023-01-30T09:20:23 IST" duration-ms="264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportTeardown -->
+      </class> <!-- banjara.BanjaraTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

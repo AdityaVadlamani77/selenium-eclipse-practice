@@ -56,7 +56,7 @@ public class ExtentReport1 {
   }
   @BeforeTest
   public void beforeTest() {
-	  extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/aditya.html",true);
+	  extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/aditya1.html",true);
 	  extent.loadConfig(new File(System.getProperty("user.dir")+ "src/test/java/extent-config.xml"));
 	  WebDriverManager.chromedriver().setup();
 	  wd = new ChromeDriver();
